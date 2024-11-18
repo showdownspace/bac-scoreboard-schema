@@ -82,11 +82,35 @@
           "score"
         ]
       }
+    },
+    "progress": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "challengeId": {
+            "type": "number"
+          },
+          "teamId": {
+            "type": "number"
+          },
+          "progress": {
+            "description": "Percentage of challenge completion (0-100). Only relevant for auto-submitted challenges.",
+            "type": "number"
+          }
+        },
+        "required": [
+          "challengeId",
+          "teamId",
+          "progress"
+        ]
+      }
     }
   },
   "required": [
     "challenges",
     "teams",
-    "submissions"
+    "submissions",
+    "progress"
   ]
 }
