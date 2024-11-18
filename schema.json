@@ -1,0 +1,92 @@
+{
+  "type": "object",
+  "properties": {
+    "challenges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number"
+          },
+          "name": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "name"
+        ]
+      }
+    },
+    "teams": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number"
+          },
+          "name": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "name"
+        ]
+      }
+    },
+    "submissions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "challengeId": {
+            "type": "number"
+          },
+          "teamId": {
+            "type": "number"
+          },
+          "status": {
+            "anyOf": [
+              {
+                "const": "reviewing",
+                "type": "string"
+              },
+              {
+                "const": "accepted",
+                "type": "string"
+              }
+            ]
+          },
+          "penalty": {
+            "description": "How many times the submission has been rejected",
+            "type": "number"
+          },
+          "submittedAt": {
+            "description": "ISO 8601 date string",
+            "type": "string"
+          },
+          "score": {
+            "description": "How many points awarded for this submission",
+            "type": "number"
+          }
+        },
+        "required": [
+          "challengeId",
+          "teamId",
+          "status",
+          "penalty",
+          "submittedAt",
+          "score"
+        ]
+      }
+    }
+  },
+  "required": [
+    "challenges",
+    "teams",
+    "submissions"
+  ]
+}
