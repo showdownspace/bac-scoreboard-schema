@@ -11,11 +11,15 @@
           },
           "name": {
             "type": "string"
+          },
+          "maxScore": {
+            "type": "number"
           }
         },
         "required": [
           "id",
-          "name"
+          "name",
+          "maxScore"
         ]
       }
     },
