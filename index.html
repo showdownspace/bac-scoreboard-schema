@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BAC Scoreboard</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fragment+Mono:ital@0;1&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bs-font-sans-serif: "Fragment Mono", "Work Sans", Sarabun, sans-serif;
+        --bs-body-bg: #272d2d;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container my-4">
+      <h1>BAC Scoreboard</h1>
+
+      <ul class="nav nav-tabs mb-3" id="scoreTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="load-tab" data-bs-toggle="tab" data-bs-target="#load" type="button" role="tab">
+            Load Data
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="dashboard-tab" data-bs-toggle="tab" data-bs-target="#dashboard" type="button" role="tab">
+            Dashboard
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="final-tab" data-bs-toggle="tab" data-bs-target="#final" type="button" role="tab">
+            Final Scoreboard
+          </button>
+        </li>
+      </ul>
+
+      <div class="tab-content" id="scoreTabContent">
+        <!-- Load Data Tab -->
+        <div class="tab-pane fade show active" id="load" role="tabpanel">
+          <div class="mb-4">
+            <label for="jsonUrl" class="form-label">Enter JSON URL:</label>
+            <div class="input-group">
+              <input type="text" class="form-control" id="jsonUrl" 
+                value="https://raw.githubusercontent.com/showdownspace/bac-scoreboard-schema/refs/heads/main/example.json"/>
+              <button class="btn btn-primary" onclick="loadData()">Load</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dashboard Tab -->
+        <div class="tab-pane fade" id="dashboard" role="tabpanel">
+          <div class="table-responsive">
+            <table class="table table-sm table-bordered" id="dashboardTable">
+              <thead>
+                <tr>
+                  <th>Team</th>
+                  <!-- Challenge columns will be added dynamically -->
+                  <th>Total</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Final Scoreboard Tab -->
+        <div class="tab-pane fade" id="final" role="tabpanel">
+          <div class="table-responsive">
+            <table class="table table-striped" id="finalScoreboard">
+              <thead>
+                <tr>
+                  <th>Rank</th>
+                  <th>Team</th>
+                  <th>Total Score</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Challenge tabs will be added here dynamically -->
+      </div>
+    </div>
+
+    <!-- Add Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      async function loadData() {
+        const url = document.getElementById("jsonUrl").value;
+        try {
+          const response = await fetch(url);
+          const data = await response.json();
+          createChallengeTabs(data);
+          displayScoreboard(data);
+          // Switch to first challenge tab after loading
+          document.querySelector('#scoreTabs .nav-link[data-bs-target="#challenge1"]')?.click();
+        } catch (error) {
+          alert("Error loading data: " + error);
+        }
+      }
+
+      function createChallengeTabs(data) {
+        const tabList = document.getElementById("scoreTabs");
+        const tabContent = document.getElementById("scoreTabContent");
+
+        // Remove existing challenge tabs and content
+        document.querySelectorAll('.challenge-tab, .challenge-content').forEach(el => el.remove());
+
+        // Create tabs for each challenge
+        data.challenges.forEach((challenge) => {
+          // Create tab
+          const tab = document.createElement("li");
+          tab.className = "nav-item challenge-tab";
+          tab.role = "presentation";
+          tab.innerHTML = `
+            <button class="nav-link" id="challenge${challenge.id}-tab" 
+              data-bs-toggle="tab" data-bs-target="#challenge${challenge.id}" 
+              type="button" role="tab">
+              ${challenge.name}
+            </button>
+          `;
+          tabList.insertBefore(tab, document.getElementById("final-tab").parentNode);
+
+          // Create content
+          const content = document.createElement("div");
+          content.className = "tab-pane fade challenge-content";
+          content.id = `challenge${challenge.id}`;
+          content.role = "tabpanel";
+          content.innerHTML = `
+            <h3>${challenge.name}</h3>
+            <div class="table-responsive">
+              <table class="table table-sm" id="challenge${challenge.id}Table">
+                <thead>
+                  <tr>
+                    <th>Rank</th>
+                    <th>Team</th>
+                    <th>Score</th>
+                    <th>Penalty</th>
+                    <th>Submitted At</th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+            </div>
+          `;
+          tabContent.appendChild(content);
+        });
+      }
+
+      function displayScoreboard(data) {
+        // Process submissions to calculate scores
+        const teamScores = {};
+        data.teams.forEach((team) => {
+          teamScores[team.id] = {
+            id: team.id,
+            name: team.name,
+            totalScore: 0,
+            challenges: {},
+          };
+        });
+
+        // Calculate scores and update challenge tables
+        data.challenges.forEach((challenge) => {
+          const relevantSubmissions = data.submissions
+            .filter(
+              (s) => s.challengeId === challenge.id && s.status === "accepted"
+            )
+            .sort((a, b) => new Date(a.submittedAt) - new Date(b.submittedAt));
+
+          const tableBody = document.querySelector(`#challenge${challenge.id}Table tbody`);
+          tableBody.innerHTML = relevantSubmissions
+            .map(
+              (sub, index) => `
+              <tr>
+                <td>${index + 1}</td>
+                <td>${data.teams.find((t) => t.id === sub.teamId).name}</td>
+                <td>${sub.score}</td>
+                <td>${sub.penalty}</td>
+                <td>${new Date(sub.submittedAt).toLocaleString()}</td>
+              </tr>
+            `
+            )
+            .join("");
+
+          // Update team scores
+          relevantSubmissions.forEach((sub) => {
+            if (sub.status === "accepted") {
+              teamScores[sub.teamId].totalScore += sub.score;
+            }
+          });
+        });
+
+        // Update final scoreboard
+        const sortedTeams = Object.values(teamScores).sort(
+          (a, b) => b.totalScore - a.totalScore
+        );
+
+        const finalTableBody = document.querySelector("#finalScoreboard tbody");
+        finalTableBody.innerHTML = sortedTeams
+          .map(
+            (team, index) => `
+            <tr>
+              <td>${index + 1}</td>
+              <td>${team.name}</td>
+              <td>${team.totalScore}</td>
+            </tr>
+          `
+          )
+          .join("");
+
+        // Update dashboard
+        updateDashboard(data, sortedTeams);
+      }
+
+      function updateDashboard(data, sortedTeams) {
+        const table = document.getElementById('dashboardTable');
+        const thead = table.querySelector('thead tr');
+        const tbody = table.querySelector('tbody');
+
+        // Clear existing columns (except Team and Total)
+        while (thead.children.length > 2) {
+          thead.removeChild(thead.children[1]);
+        }
+
+        // Add challenge columns
+        data.challenges.forEach(challenge => {
+          const th = document.createElement('th');
+          th.textContent = `${challenge.name}`;
+          th.style.fontFamily = 'Work Sans';
+          th.style.textAlign = 'center';
+          thead.insertBefore(th, thead.lastElementChild);
+        });
+
+        // Clear and populate rows
+        tbody.innerHTML = '';
+        sortedTeams.forEach(team => {
+          const row = tbody.insertRow();
+          
+          // Team name cell
+          const nameCell = row.insertCell();
+          nameCell.textContent = team.name;
+
+          // Challenge cells
+          data.challenges.forEach(challenge => {
+            const cell = row.insertCell();
+            cell.className = 'text-center';
+
+            // Find accepted submission
+            const submission = data.submissions.find(s => 
+              s.teamId === team.id && 
+              s.challengeId === challenge.id && 
+              s.status === 'accepted'
+            );
+
+            // Find progress
+            const progress = data.progress.find(p =>
+              p.teamId === team.id &&
+              p.challengeId === challenge.id
+            );
+
+            if (submission) {
+              cell.textContent = submission.score;
+              cell.style.fontWeight = 'bold';
+            } else if (progress) {
+              cell.textContent = progress.progress + '%';
+              cell.style.color = '#666';
+            }
+            cell.style.width = '6.4rem';
+          });
+
+          // Total score cell
+          const totalCell = row.insertCell();
+          totalCell.textContent = team.totalScore;
+          totalCell.style.fontWeight = 'bold';
+          totalCell.style.textAlign = 'right';
+        });
+      }
+
+      // Load data on page load
+      loadData();
+    </script>
+  </body>
+</html>
