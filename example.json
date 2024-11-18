@@ -1,5 +1,5 @@
 {
-  "$schema": "https://raw.githubusercontent.com/showdownspace/bac-scoreboard-schema/2689821a0ec65ca6108030ec0ce90d85e5959e9c/schema.json",
+  "$schema": "https://raw.githubusercontent.com/showdownspace/bac-scoreboard-schema/c3ba9006ea82db66ccc28a40c1e2e34d62a9a036/schema.json",
   "challenges": [
     {
       "id": 1,
@@ -94,572 +94,827 @@
   ],
   "submissions": [
     {
+      "challengeId": 6,
+      "teamId": 3,
+      "status": "accepted",
+      "penalty": 0,
+      "submittedAt": "2024-11-20T12:10:21.167Z",
+      "score": 30
+    },
+    {
       "challengeId": 5,
-      "teamId": 8,
+      "teamId": 7,
+      "status": "accepted",
+      "penalty": 0,
+      "submittedAt": "2024-11-20T12:13:43.302Z",
+      "score": 30
+    },
+    {
+      "challengeId": 1,
+      "teamId": 14,
       "status": "reviewing",
-      "penalty": 3,
-      "submittedAt": "2024-11-20T12:10:15.793Z",
-      "score": -15
+      "penalty": 0,
+      "submittedAt": "2024-11-20T12:16:41.113Z",
+      "score": 0
+    },
+    {
+      "challengeId": 5,
+      "teamId": 12,
+      "status": "accepted",
+      "penalty": 0,
+      "submittedAt": "2024-11-20T12:18:26.842Z",
+      "score": 29
+    },
+    {
+      "challengeId": 7,
+      "teamId": 6,
+      "status": "accepted",
+      "penalty": 0,
+      "submittedAt": "2024-11-20T12:18:41.204Z",
+      "score": 30
     },
     {
       "challengeId": 8,
       "teamId": 13,
+      "status": "reviewing",
+      "penalty": 0,
+      "submittedAt": "2024-11-20T12:20:02.856Z",
+      "score": 0
+    },
+    {
+      "challengeId": 7,
+      "teamId": 2,
       "status": "accepted",
       "penalty": 0,
-      "submittedAt": "2024-11-20T12:10:22.772Z",
+      "submittedAt": "2024-11-20T12:20:09.302Z",
+      "score": 29
+    },
+    {
+      "challengeId": 6,
+      "teamId": 12,
+      "status": "accepted",
+      "penalty": 0,
+      "submittedAt": "2024-11-20T12:20:28.090Z",
+      "score": 29
+    },
+    {
+      "challengeId": 2,
+      "teamId": 11,
+      "status": "accepted",
+      "penalty": 0,
+      "submittedAt": "2024-11-20T12:21:37.992Z",
+      "score": 30
+    },
+    {
+      "challengeId": 2,
+      "teamId": 3,
+      "status": "accepted",
+      "penalty": 0,
+      "submittedAt": "2024-11-20T12:22:14.917Z",
+      "score": 29
+    },
+    {
+      "challengeId": 8,
+      "teamId": 12,
+      "status": "accepted",
+      "penalty": 0,
+      "submittedAt": "2024-11-20T12:22:31.125Z",
       "score": 40
     },
     {
-      "challengeId": 4,
-      "teamId": 1,
-      "status": "accepted",
-      "penalty": 1,
-      "submittedAt": "2024-11-20T12:10:45.072Z",
-      "score": 15
-    },
-    {
-      "challengeId": 4,
-      "teamId": 4,
-      "status": "accepted",
-      "penalty": 3,
-      "submittedAt": "2024-11-20T12:14:19.363Z",
-      "score": 4
-    },
-    {
-      "challengeId": 7,
-      "teamId": 12,
-      "status": "accepted",
-      "penalty": 0,
-      "submittedAt": "2024-11-20T12:15:52.846Z",
-      "score": 30
-    },
-    {
-      "challengeId": 2,
-      "teamId": 4,
-      "status": "accepted",
-      "penalty": 2,
-      "submittedAt": "2024-11-20T12:20:15.546Z",
-      "score": 20
-    },
-    {
       "challengeId": 6,
-      "teamId": 8,
-      "status": "reviewing",
-      "penalty": 0,
-      "submittedAt": "2024-11-20T12:21:25.962Z",
-      "score": 0
-    },
-    {
-      "challengeId": 4,
-      "teamId": 5,
-      "status": "accepted",
-      "penalty": 0,
-      "submittedAt": "2024-11-20T12:23:38.162Z",
-      "score": 18
-    },
-    {
-      "challengeId": 1,
-      "teamId": 1,
-      "status": "accepted",
-      "penalty": 0,
-      "submittedAt": "2024-11-20T12:25:01.897Z",
-      "score": 20
-    },
-    {
-      "challengeId": 8,
-      "teamId": 12,
-      "status": "accepted",
-      "penalty": 0,
-      "submittedAt": "2024-11-20T12:25:35.909Z",
-      "score": 39
-    },
-    {
-      "challengeId": 8,
-      "teamId": 6,
-      "status": "accepted",
-      "penalty": 3,
-      "submittedAt": "2024-11-20T12:26:11.006Z",
-      "score": 23
-    },
-    {
-      "challengeId": 6,
-      "teamId": 1,
-      "status": "accepted",
-      "penalty": 0,
-      "submittedAt": "2024-11-20T12:26:12.596Z",
-      "score": 30
-    },
-    {
-      "challengeId": 1,
-      "teamId": 11,
-      "status": "reviewing",
-      "penalty": 0,
-      "submittedAt": "2024-11-20T12:26:12.890Z",
-      "score": 0
-    },
-    {
-      "challengeId": 6,
-      "teamId": 14,
-      "status": "accepted",
-      "penalty": 1,
-      "submittedAt": "2024-11-20T12:27:00.902Z",
-      "score": 24
-    },
-    {
-      "challengeId": 6,
-      "teamId": 11,
-      "status": "reviewing",
-      "penalty": 1,
-      "submittedAt": "2024-11-20T12:29:11.800Z",
-      "score": -5
-    },
-    {
-      "challengeId": 2,
-      "teamId": 8,
-      "status": "reviewing",
-      "penalty": 1,
-      "submittedAt": "2024-11-20T12:29:20.110Z",
-      "score": -5
-    },
-    {
-      "challengeId": 4,
-      "teamId": 12,
-      "status": "accepted",
-      "penalty": 2,
-      "submittedAt": "2024-11-20T12:32:52.776Z",
-      "score": 7
-    },
-    {
-      "challengeId": 6,
-      "teamId": 4,
-      "status": "reviewing",
-      "penalty": 1,
-      "submittedAt": "2024-11-20T12:35:34.717Z",
-      "score": -5
-    },
-    {
-      "challengeId": 5,
       "teamId": 2,
       "status": "reviewing",
-      "penalty": 1,
-      "submittedAt": "2024-11-20T12:37:24.897Z",
-      "score": -5
-    },
-    {
-      "challengeId": 5,
-      "teamId": 7,
-      "status": "reviewing",
       "penalty": 0,
-      "submittedAt": "2024-11-20T12:38:25.399Z",
+      "submittedAt": "2024-11-20T12:23:33.514Z",
       "score": 0
     },
     {
-      "challengeId": 8,
-      "teamId": 1,
-      "status": "accepted",
-      "penalty": 1,
-      "submittedAt": "2024-11-20T12:40:06.814Z",
-      "score": 32
-    },
-    {
-      "challengeId": 1,
-      "teamId": 6,
+      "challengeId": 2,
+      "teamId": 9,
       "status": "accepted",
       "penalty": 0,
-      "submittedAt": "2024-11-20T12:40:39.801Z",
-      "score": 19
-    },
-    {
-      "challengeId": 6,
-      "teamId": 5,
-      "status": "accepted",
-      "penalty": 3,
-      "submittedAt": "2024-11-20T12:41:05.955Z",
-      "score": 13
-    },
-    {
-      "challengeId": 3,
-      "teamId": 5,
-      "status": "accepted",
-      "penalty": 2,
-      "submittedAt": "2024-11-20T12:42:20.124Z",
-      "score": 30
-    },
-    {
-      "challengeId": 3,
-      "teamId": 8,
-      "status": "reviewing",
-      "penalty": 0,
-      "submittedAt": "2024-11-20T12:42:20.914Z",
-      "score": 0
-    },
-    {
-      "challengeId": 8,
-      "teamId": 8,
-      "status": "reviewing",
-      "penalty": 0,
-      "submittedAt": "2024-11-20T12:42:39.273Z",
-      "score": 0
-    },
-    {
-      "challengeId": 4,
-      "teamId": 8,
-      "status": "reviewing",
-      "penalty": 0,
-      "submittedAt": "2024-11-20T12:42:49.952Z",
-      "score": 0
-    },
-    {
-      "challengeId": 3,
-      "teamId": 1,
-      "status": "accepted",
-      "penalty": 3,
-      "submittedAt": "2024-11-20T12:43:11.746Z",
-      "score": 24
-    },
-    {
-      "challengeId": 6,
-      "teamId": 7,
-      "status": "accepted",
-      "penalty": 0,
-      "submittedAt": "2024-11-20T12:44:14.892Z",
-      "score": 27
-    },
-    {
-      "challengeId": 7,
-      "teamId": 4,
-      "status": "accepted",
-      "penalty": 3,
-      "submittedAt": "2024-11-20T12:47:01.709Z",
-      "score": 14
-    },
-    {
-      "challengeId": 4,
-      "teamId": 3,
-      "status": "accepted",
-      "penalty": 0,
-      "submittedAt": "2024-11-20T12:47:10.030Z",
-      "score": 16
-    },
-    {
-      "challengeId": 3,
-      "teamId": 3,
-      "status": "accepted",
-      "penalty": 0,
-      "submittedAt": "2024-11-20T12:47:26.572Z",
-      "score": 38
-    },
-    {
-      "challengeId": 4,
-      "teamId": 11,
-      "status": "accepted",
-      "penalty": 1,
-      "submittedAt": "2024-11-20T12:50:31.499Z",
-      "score": 10
-    },
-    {
-      "challengeId": 7,
-      "teamId": 14,
-      "status": "reviewing",
-      "penalty": 0,
-      "submittedAt": "2024-11-20T12:50:45.486Z",
-      "score": 0
-    },
-    {
-      "challengeId": 7,
-      "teamId": 1,
-      "status": "accepted",
-      "penalty": 0,
-      "submittedAt": "2024-11-20T12:51:57.895Z",
+      "submittedAt": "2024-11-20T12:25:36.565Z",
       "score": 28
     },
     {
-      "challengeId": 2,
-      "teamId": 2,
-      "status": "accepted",
-      "penalty": 0,
-      "submittedAt": "2024-11-20T12:53:11.906Z",
-      "score": 29
-    },
-    {
-      "challengeId": 2,
-      "teamId": 1,
-      "status": "accepted",
-      "penalty": 2,
-      "submittedAt": "2024-11-20T12:53:50.187Z",
-      "score": 18
-    },
-    {
-      "challengeId": 1,
-      "teamId": 5,
-      "status": "accepted",
-      "penalty": 0,
-      "submittedAt": "2024-11-20T12:55:50.067Z",
-      "score": 18
-    },
-    {
-      "challengeId": 6,
-      "teamId": 10,
-      "status": "reviewing",
-      "penalty": 2,
-      "submittedAt": "2024-11-20T12:59:23.056Z",
-      "score": -10
-    },
-    {
-      "challengeId": 8,
-      "teamId": 10,
-      "status": "accepted",
-      "penalty": 0,
-      "submittedAt": "2024-11-20T13:00:05.520Z",
-      "score": 36
-    },
-    {
-      "challengeId": 1,
-      "teamId": 13,
-      "status": "accepted",
-      "penalty": 0,
-      "submittedAt": "2024-11-20T13:02:28.078Z",
-      "score": 17
-    },
-    {
-      "challengeId": 3,
-      "teamId": 10,
-      "status": "accepted",
-      "penalty": 1,
-      "submittedAt": "2024-11-20T13:02:48.280Z",
-      "score": 32
-    },
-    {
-      "challengeId": 2,
+      "challengeId": 4,
       "teamId": 12,
       "status": "accepted",
       "penalty": 0,
-      "submittedAt": "2024-11-20T13:03:41.458Z",
+      "submittedAt": "2024-11-20T12:26:14.414Z",
+      "score": 20
+    },
+    {
+      "challengeId": 7,
+      "teamId": 13,
+      "status": "accepted",
+      "penalty": 0,
+      "submittedAt": "2024-11-20T12:26:21.607Z",
+      "score": 28
+    },
+    {
+      "challengeId": 1,
+      "teamId": 2,
+      "status": "accepted",
+      "penalty": 0,
+      "submittedAt": "2024-11-20T12:28:17.970Z",
+      "score": 20
+    },
+    {
+      "challengeId": 2,
+      "teamId": 7,
+      "status": "accepted",
+      "penalty": 0,
+      "submittedAt": "2024-11-20T12:29:55.858Z",
       "score": 27
     },
     {
+      "challengeId": 3,
+      "teamId": 14,
+      "status": "accepted",
+      "penalty": 4,
+      "submittedAt": "2024-11-20T12:32:03.338Z",
+      "score": 20
+    },
+    {
       "challengeId": 4,
-      "teamId": 10,
-      "status": "reviewing",
+      "teamId": 2,
+      "status": "accepted",
       "penalty": 0,
-      "submittedAt": "2024-11-20T13:04:02.686Z",
-      "score": 0
+      "submittedAt": "2024-11-20T12:34:02.828Z",
+      "score": 19
+    },
+    {
+      "challengeId": 8,
+      "teamId": 7,
+      "status": "accepted",
+      "penalty": 0,
+      "submittedAt": "2024-11-20T12:35:08.497Z",
+      "score": 39
+    },
+    {
+      "challengeId": 6,
+      "teamId": 11,
+      "status": "accepted",
+      "penalty": 0,
+      "submittedAt": "2024-11-20T12:35:47.033Z",
+      "score": 28
+    },
+    {
+      "challengeId": 7,
+      "teamId": 12,
+      "status": "accepted",
+      "penalty": 3,
+      "submittedAt": "2024-11-20T12:39:44.566Z",
+      "score": 12
+    },
+    {
+      "challengeId": 7,
+      "teamId": 11,
+      "status": "accepted",
+      "penalty": 2,
+      "submittedAt": "2024-11-20T12:42:18.125Z",
+      "score": 16
     },
     {
       "challengeId": 1,
       "teamId": 7,
       "status": "reviewing",
       "penalty": 0,
-      "submittedAt": "2024-11-20T13:04:34.434Z",
+      "submittedAt": "2024-11-20T12:42:25.100Z",
+      "score": 0
+    },
+    {
+      "challengeId": 5,
+      "teamId": 11,
+      "status": "accepted",
+      "penalty": 0,
+      "submittedAt": "2024-11-20T12:43:17.231Z",
+      "score": 28
+    },
+    {
+      "challengeId": 8,
+      "teamId": 11,
+      "status": "reviewing",
+      "penalty": 0,
+      "submittedAt": "2024-11-20T12:43:27.670Z",
+      "score": 0
+    },
+    {
+      "challengeId": 3,
+      "teamId": 6,
+      "status": "reviewing",
+      "penalty": 1,
+      "submittedAt": "2024-11-20T12:46:01.206Z",
+      "score": -5
+    },
+    {
+      "challengeId": 5,
+      "teamId": 6,
+      "status": "reviewing",
+      "penalty": 0,
+      "submittedAt": "2024-11-20T12:46:12.749Z",
       "score": 0
     },
     {
       "challengeId": 4,
-      "teamId": 9,
+      "teamId": 4,
       "status": "accepted",
       "penalty": 0,
-      "submittedAt": "2024-11-20T13:05:05.374Z",
-      "score": 14
+      "submittedAt": "2024-11-20T12:46:19.244Z",
+      "score": 18
     },
     {
-      "challengeId": 6,
+      "challengeId": 4,
+      "teamId": 8,
+      "status": "accepted",
+      "penalty": 0,
+      "submittedAt": "2024-11-20T12:46:41.144Z",
+      "score": 17
+    },
+    {
+      "challengeId": 2,
       "teamId": 2,
+      "status": "accepted",
+      "penalty": 0,
+      "submittedAt": "2024-11-20T12:48:08.410Z",
+      "score": 26
+    },
+    {
+      "challengeId": 7,
+      "teamId": 7,
+      "status": "accepted",
+      "penalty": 3,
+      "submittedAt": "2024-11-20T12:51:14.160Z",
+      "score": 10
+    },
+    {
+      "challengeId": 3,
+      "teamId": 1,
+      "status": "accepted",
+      "penalty": 3,
+      "submittedAt": "2024-11-20T12:51:30.374Z",
+      "score": 24
+    },
+    {
+      "challengeId": 1,
+      "teamId": 13,
+      "status": "accepted",
+      "penalty": 0,
+      "submittedAt": "2024-11-20T12:52:10.558Z",
+      "score": 19
+    },
+    {
+      "challengeId": 4,
+      "teamId": 7,
+      "status": "accepted",
+      "penalty": 0,
+      "submittedAt": "2024-11-20T12:57:56.942Z",
+      "score": 16
+    },
+    {
+      "challengeId": 7,
+      "teamId": 14,
+      "status": "accepted",
+      "penalty": 4,
+      "submittedAt": "2024-11-20T13:00:48.814Z",
+      "score": 4
+    },
+    {
+      "challengeId": 8,
+      "teamId": 5,
+      "status": "accepted",
+      "penalty": 0,
+      "submittedAt": "2024-11-20T13:00:57.465Z",
+      "score": 38
+    },
+    {
+      "challengeId": 5,
+      "teamId": 2,
+      "status": "accepted",
+      "penalty": 0,
+      "submittedAt": "2024-11-20T13:01:53.737Z",
+      "score": 27
+    },
+    {
+      "challengeId": 3,
+      "teamId": 8,
       "status": "reviewing",
-      "penalty": 2,
-      "submittedAt": "2024-11-20T13:05:54.987Z",
-      "score": -10
+      "penalty": 0,
+      "submittedAt": "2024-11-20T13:02:31.760Z",
+      "score": 0
+    },
+    {
+      "challengeId": 3,
+      "teamId": 3,
+      "status": "reviewing",
+      "penalty": 0,
+      "submittedAt": "2024-11-20T13:06:07.589Z",
+      "score": 0
+    },
+    {
+      "challengeId": 1,
+      "teamId": 6,
+      "status": "reviewing",
+      "penalty": 0,
+      "submittedAt": "2024-11-20T13:06:49.360Z",
+      "score": 0
     },
     {
       "challengeId": 7,
       "teamId": 3,
-      "status": "reviewing",
-      "penalty": 0,
-      "submittedAt": "2024-11-20T13:07:18.159Z",
-      "score": 0
-    },
-    {
-      "challengeId": 8,
-      "teamId": 14,
-      "status": "accepted",
-      "penalty": 0,
-      "submittedAt": "2024-11-20T13:07:36.030Z",
-      "score": 35
-    },
-    {
-      "challengeId": 2,
-      "teamId": 9,
-      "status": "reviewing",
-      "penalty": 2,
-      "submittedAt": "2024-11-20T13:08:14.418Z",
-      "score": -10
-    },
-    {
-      "challengeId": 3,
-      "teamId": 4,
       "status": "accepted",
       "penalty": 1,
-      "submittedAt": "2024-11-20T13:08:44.839Z",
-      "score": 31
+      "submittedAt": "2024-11-20T13:07:14.800Z",
+      "score": 18
     },
     {
-      "challengeId": 7,
-      "teamId": 10,
-      "status": "reviewing",
-      "penalty": 0,
-      "submittedAt": "2024-11-20T13:15:29.930Z",
-      "score": 0
-    },
-    {
-      "challengeId": 7,
-      "teamId": 5,
+      "challengeId": 1,
+      "teamId": 3,
       "status": "accepted",
       "penalty": 0,
-      "submittedAt": "2024-11-20T13:15:56.335Z",
+      "submittedAt": "2024-11-20T13:07:27.438Z",
+      "score": 18
+    },
+    {
+      "challengeId": 6,
+      "teamId": 7,
+      "status": "accepted",
+      "penalty": 0,
+      "submittedAt": "2024-11-20T13:09:18.905Z",
       "score": 27
     },
     {
       "challengeId": 5,
-      "teamId": 10,
+      "teamId": 14,
+      "status": "accepted",
+      "penalty": 0,
+      "submittedAt": "2024-11-20T13:09:22.102Z",
+      "score": 26
+    },
+    {
+      "challengeId": 2,
+      "teamId": 1,
+      "status": "accepted",
+      "penalty": 0,
+      "submittedAt": "2024-11-20T13:09:33.501Z",
+      "score": 25
+    },
+    {
+      "challengeId": 8,
+      "teamId": 6,
       "status": "reviewing",
       "penalty": 0,
-      "submittedAt": "2024-11-20T13:16:46.813Z",
+      "submittedAt": "2024-11-20T13:11:29.038Z",
       "score": 0
+    },
+    {
+      "challengeId": 3,
+      "teamId": 7,
+      "status": "accepted",
+      "penalty": 3,
+      "submittedAt": "2024-11-20T13:11:54.417Z",
+      "score": 23
+    },
+    {
+      "challengeId": 1,
+      "teamId": 5,
+      "status": "accepted",
+      "penalty": 0,
+      "submittedAt": "2024-11-20T13:11:58.893Z",
+      "score": 17
+    },
+    {
+      "challengeId": 6,
+      "teamId": 13,
+      "status": "accepted",
+      "penalty": 0,
+      "submittedAt": "2024-11-20T13:12:41.793Z",
+      "score": 26
+    },
+    {
+      "challengeId": 4,
+      "teamId": 1,
+      "status": "reviewing",
+      "penalty": 0,
+      "submittedAt": "2024-11-20T13:15:01.025Z",
+      "score": 0
+    },
+    {
+      "challengeId": 6,
+      "teamId": 10,
+      "status": "accepted",
+      "penalty": 0,
+      "submittedAt": "2024-11-20T13:16:12.125Z",
+      "score": 25
     },
     {
       "challengeId": 5,
       "teamId": 4,
       "status": "accepted",
       "penalty": 0,
-      "submittedAt": "2024-11-20T13:16:50.301Z",
-      "score": 30
+      "submittedAt": "2024-11-20T13:19:41.177Z",
+      "score": 25
     },
     {
-      "challengeId": 4,
-      "teamId": 13,
+      "challengeId": 1,
+      "teamId": 12,
       "status": "accepted",
       "penalty": 0,
-      "submittedAt": "2024-11-20T13:17:27.730Z",
-      "score": 13
+      "submittedAt": "2024-11-20T13:23:09.566Z",
+      "score": 16
     },
     {
-      "challengeId": 8,
-      "teamId": 4,
+      "challengeId": 3,
+      "teamId": 11,
       "status": "accepted",
       "penalty": 0,
-      "submittedAt": "2024-11-20T13:18:30.291Z",
-      "score": 34
+      "submittedAt": "2024-11-20T13:24:21.167Z",
+      "score": 37
     },
     {
       "challengeId": 7,
+      "teamId": 9,
+      "status": "accepted",
+      "penalty": 0,
+      "submittedAt": "2024-11-20T13:25:10.069Z",
+      "score": 22
+    },
+    {
+      "challengeId": 8,
+      "teamId": 9,
+      "status": "accepted",
+      "penalty": 0,
+      "submittedAt": "2024-11-20T13:25:25.699Z",
+      "score": 37
+    },
+    {
+      "challengeId": 4,
+      "teamId": 6,
+      "status": "reviewing",
+      "penalty": 0,
+      "submittedAt": "2024-11-20T13:25:39.651Z",
+      "score": 0
+    },
+    {
+      "challengeId": 6,
+      "teamId": 8,
+      "status": "accepted",
+      "penalty": 0,
+      "submittedAt": "2024-11-20T13:26:28.361Z",
+      "score": 24
+    },
+    {
+      "challengeId": 2,
+      "teamId": 13,
+      "status": "accepted",
+      "penalty": 0,
+      "submittedAt": "2024-11-20T13:26:52.798Z",
+      "score": 24
+    },
+    {
+      "challengeId": 3,
+      "teamId": 4,
+      "status": "accepted",
+      "penalty": 2,
+      "submittedAt": "2024-11-20T13:31:34.879Z",
+      "score": 26
+    },
+    {
+      "challengeId": 5,
+      "teamId": 3,
+      "status": "accepted",
+      "penalty": 0,
+      "submittedAt": "2024-11-20T13:32:02.054Z",
+      "score": 24
+    },
+    {
+      "challengeId": 2,
       "teamId": 8,
       "status": "reviewing",
       "penalty": 0,
-      "submittedAt": "2024-11-20T13:19:44.464Z",
+      "submittedAt": "2024-11-20T13:35:24.428Z",
       "score": 0
+    },
+    {
+      "challengeId": 5,
+      "teamId": 10,
+      "status": "accepted",
+      "penalty": 0,
+      "submittedAt": "2024-11-20T13:36:41.590Z",
+      "score": 23
+    },
+    {
+      "challengeId": 1,
+      "teamId": 11,
+      "status": "accepted",
+      "penalty": 0,
+      "submittedAt": "2024-11-20T13:37:01.649Z",
+      "score": 15
+    },
+    {
+      "challengeId": 4,
+      "teamId": 11,
+      "status": "accepted",
+      "penalty": 0,
+      "submittedAt": "2024-11-20T13:37:12.754Z",
+      "score": 15
+    },
+    {
+      "challengeId": 3,
+      "teamId": 12,
+      "status": "accepted",
+      "penalty": 1,
+      "submittedAt": "2024-11-20T13:38:44.880Z",
+      "score": 30
+    }
+  ],
+  "progress": [
+    {
+      "challengeId": 1,
+      "teamId": 1,
+      "progress": 77
+    },
+    {
+      "challengeId": 2,
+      "teamId": 1,
+      "progress": 36
+    },
+    {
+      "challengeId": 4,
+      "teamId": 1,
+      "progress": 33
+    },
+    {
+      "challengeId": 6,
+      "teamId": 1,
+      "progress": 60
     },
     {
       "challengeId": 1,
       "teamId": 2,
-      "status": "accepted",
-      "penalty": 0,
-      "submittedAt": "2024-11-20T13:20:19.915Z",
-      "score": 16
+      "progress": 55
+    },
+    {
+      "challengeId": 2,
+      "teamId": 2,
+      "progress": 71
     },
     {
       "challengeId": 4,
-      "teamId": 14,
-      "status": "accepted",
-      "penalty": 0,
-      "submittedAt": "2024-11-20T13:21:43.782Z",
-      "score": 12
+      "teamId": 2,
+      "progress": 66
+    },
+    {
+      "challengeId": 5,
+      "teamId": 2,
+      "progress": 77
+    },
+    {
+      "challengeId": 6,
+      "teamId": 2,
+      "progress": 66
+    },
+    {
+      "challengeId": 1,
+      "teamId": 3,
+      "progress": 74
+    },
+    {
+      "challengeId": 2,
+      "teamId": 3,
+      "progress": 42
+    },
+    {
+      "challengeId": 5,
+      "teamId": 3,
+      "progress": 38
+    },
+    {
+      "challengeId": 6,
+      "teamId": 3,
+      "progress": 42
+    },
+    {
+      "challengeId": 4,
+      "teamId": 4,
+      "progress": 80
+    },
+    {
+      "challengeId": 5,
+      "teamId": 4,
+      "progress": 97
+    },
+    {
+      "challengeId": 1,
+      "teamId": 5,
+      "progress": 67
+    },
+    {
+      "challengeId": 8,
+      "teamId": 5,
+      "progress": 65
+    },
+    {
+      "challengeId": 1,
+      "teamId": 6,
+      "progress": 46
+    },
+    {
+      "challengeId": 2,
+      "teamId": 6,
+      "progress": 19
+    },
+    {
+      "challengeId": 4,
+      "teamId": 6,
+      "progress": 67
+    },
+    {
+      "challengeId": 5,
+      "teamId": 6,
+      "progress": 30
+    },
+    {
+      "challengeId": 8,
+      "teamId": 6,
+      "progress": 65
+    },
+    {
+      "challengeId": 1,
+      "teamId": 7,
+      "progress": 30
+    },
+    {
+      "challengeId": 2,
+      "teamId": 7,
+      "progress": 28
+    },
+    {
+      "challengeId": 4,
+      "teamId": 7,
+      "progress": 25
+    },
+    {
+      "challengeId": 5,
+      "teamId": 7,
+      "progress": 26
+    },
+    {
+      "challengeId": 6,
+      "teamId": 7,
+      "progress": 30
+    },
+    {
+      "challengeId": 8,
+      "teamId": 7,
+      "progress": 63
+    },
+    {
+      "challengeId": 2,
+      "teamId": 8,
+      "progress": 99
+    },
+    {
+      "challengeId": 4,
+      "teamId": 8,
+      "progress": 97
+    },
+    {
+      "challengeId": 5,
+      "teamId": 8,
+      "progress": 84
+    },
+    {
+      "challengeId": 6,
+      "teamId": 8,
+      "progress": 81
+    },
+    {
+      "challengeId": 2,
+      "teamId": 9,
+      "progress": 36
+    },
+    {
+      "challengeId": 5,
+      "teamId": 9,
+      "progress": 36
+    },
+    {
+      "challengeId": 8,
+      "teamId": 9,
+      "progress": 95
+    },
+    {
+      "challengeId": 4,
+      "teamId": 10,
+      "progress": 86
+    },
+    {
+      "challengeId": 5,
+      "teamId": 10,
+      "progress": 8
+    },
+    {
+      "challengeId": 6,
+      "teamId": 10,
+      "progress": 80
+    },
+    {
+      "challengeId": 1,
+      "teamId": 11,
+      "progress": 83
     },
     {
       "challengeId": 2,
       "teamId": 11,
-      "status": "accepted",
-      "penalty": 1,
-      "submittedAt": "2024-11-20T13:25:25.478Z",
-      "score": 21
+      "progress": 43
     },
     {
-      "challengeId": 2,
-      "teamId": 5,
-      "status": "accepted",
-      "penalty": 2,
-      "submittedAt": "2024-11-20T13:25:40.392Z",
-      "score": 15
-    },
-    {
-      "challengeId": 2,
-      "teamId": 14,
-      "status": "reviewing",
-      "penalty": 1,
-      "submittedAt": "2024-11-20T13:28:05.236Z",
-      "score": -5
-    },
-    {
-      "challengeId": 1,
-      "teamId": 14,
-      "status": "accepted",
-      "penalty": 2,
-      "submittedAt": "2024-11-20T13:29:23.019Z",
-      "score": 5
+      "challengeId": 4,
+      "teamId": 11,
+      "progress": 1
     },
     {
       "challengeId": 5,
-      "teamId": 5,
-      "status": "accepted",
-      "penalty": 2,
-      "submittedAt": "2024-11-20T13:30:09.309Z",
-      "score": 19
+      "teamId": 11,
+      "progress": 69
     },
     {
       "challengeId": 6,
-      "teamId": 6,
-      "status": "accepted",
-      "penalty": 1,
-      "submittedAt": "2024-11-20T13:30:57.839Z",
-      "score": 21
+      "teamId": 11,
+      "progress": 14
     },
     {
-      "challengeId": 3,
-      "teamId": 7,
-      "status": "accepted",
-      "penalty": 1,
-      "submittedAt": "2024-11-20T13:32:35.901Z",
-      "score": 30
+      "challengeId": 8,
+      "teamId": 11,
+      "progress": 54
     },
     {
       "challengeId": 1,
       "teamId": 12,
-      "status": "accepted",
-      "penalty": 0,
-      "submittedAt": "2024-11-20T13:35:38.669Z",
-      "score": 14
+      "progress": 46
+    },
+    {
+      "challengeId": 4,
+      "teamId": 12,
+      "progress": 40
     },
     {
       "challengeId": 5,
-      "teamId": 1,
-      "status": "accepted",
-      "penalty": 2,
-      "submittedAt": "2024-11-20T13:36:05.609Z",
-      "score": 18
+      "teamId": 12,
+      "progress": 34
+    },
+    {
+      "challengeId": 6,
+      "teamId": 12,
+      "progress": 94
+    },
+    {
+      "challengeId": 8,
+      "teamId": 12,
+      "progress": 73
+    },
+    {
+      "challengeId": 1,
+      "teamId": 13,
+      "progress": 27
     },
     {
       "challengeId": 2,
-      "teamId": 7,
-      "status": "accepted",
-      "penalty": 3,
-      "submittedAt": "2024-11-20T13:37:31.957Z",
-      "score": 9
+      "teamId": 13,
+      "progress": 63
     },
     {
-      "challengeId": 3,
-      "teamId": 12,
-      "status": "accepted",
-      "penalty": 1,
-      "submittedAt": "2024-11-20T13:39:45.358Z",
-      "score": 29
+      "challengeId": 4,
+      "teamId": 13,
+      "progress": 94
+    },
+    {
+      "challengeId": 6,
+      "teamId": 13,
+      "progress": 51
+    },
+    {
+      "challengeId": 8,
+      "teamId": 13,
+      "progress": 72
+    },
+    {
+      "challengeId": 1,
+      "teamId": 14,
+      "progress": 81
+    },
+    {
+      "challengeId": 4,
+      "teamId": 14,
+      "progress": 69
+    },
+    {
+      "challengeId": 5,
+      "teamId": 14,
+      "progress": 3
     }
   ]
 }
