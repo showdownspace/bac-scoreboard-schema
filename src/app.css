@@ -1,0 +1,11 @@
+:root {
+  --bs-font-sans-serif: "Fragment Mono", "Work Sans", Sarabun, sans-serif;
+  --bs-body-bg: #272d2d;
+}
+
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
