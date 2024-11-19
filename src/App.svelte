@@ -7,10 +7,10 @@
     Challenge,
     Progress,
     ScoreboardSchema,
+    SortedTeam,
     Submission,
     Team,
     TeamScore,
-    SortedTeam,
   } from "./lib/types";
 
   let challenges: Challenge[] = [];
@@ -126,6 +126,11 @@
   }
 
   onMount(() => {
+    const params = new URLSearchParams(window.location.search);
+    if (params.has("url")) {
+      const url = params.get("url")!;
+      (document.getElementById("jsonUrl") as HTMLInputElement).value = url;
+    }
     loadData(true);
     setRefreshInterval();
   });
@@ -219,7 +224,7 @@
             type="number"
             class="form-control"
             id="resetInterval"
-            value="1000"
+            value="10000"
           />
           <button class="btn btn-primary" on:click={() => setRefreshInterval()}>
             Set Interval
