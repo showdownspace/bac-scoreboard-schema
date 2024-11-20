@@ -241,7 +241,9 @@
             <tr>
               <th>Team</th>
               {#each challenges as challenge}
-                <th class="dashboard-th-ws">{challenge.name}</th>
+                <th class="dashboard-th-ws">
+                  {challenge.name} ({challenge.maxScore})
+                </th>
               {/each}
               <th>Total</th>
             </tr>
